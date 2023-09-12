@@ -1,0 +1,852 @@
+.mo_area{
+    display: none;
+}
+main {
+    flex: 1 0 auto;
+}
+main .main-banner{
+    position: relative;
+}
+main .main-banner .swiper-container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+main .main-banner .swiper-container .swiper-next-banner-slider,
+main .main-banner .swiper-container .swiper-prev-banner-slider{
+    background-color: #38aa34;
+    color: #fff;
+    width: 40px;
+    height: 70px;
+    top: calc(55% - 35px);
+    margin-top: 0;
+}
+main .main-banner .swiper-container .mobile{
+    display: none;
+}
+.swiper-button-next{
+    left: 0;
+}
+.swiper-container-rtl .swiper-button-prev{
+    right: 0;
+}
+main .swiper-button-next, main .swiper-container-rtl .swiper-button-prev{
+    background-image: url(../images/swiper-right.svg);
+}
+main .swiper-button-prev, main .swiper-container-rtl .swiper-button-next{
+    background-image: url(../images/swiper-left.svg);
+}
+main .main-banner .swiper-container .swiper-next-banner-slider{
+    left: auto;
+    right: 0;
+}
+main .main-banner .swiper-container .swiper-prev-banner-slider{
+    right: auto;
+    left: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+/* 인스타그램, 페이스북 */
+
+main .main-banner .instagram {
+    background-color: #fff;
+    border: 1px solid #e5e6e8;
+    padding: 20px;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: -80px;
+    left: 10%;
+    font-family: "Prompt";
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #303733;
+    z-index: 1000;
+}
+
+main .main-banner .facebook{
+    background-color: #fff;
+    border: 1px solid #e5e6e8;
+    padding: 20px;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: -80px;
+    left: calc(10% + 275px);
+    font-family: "Prompt";
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #303733;
+}
+main .main-banner .instagram:hover,
+main .main-banner .facebook:hover{
+    text-decoration: underline;
+}
+main .main-banner .instagram img,
+main .main-banner .facebook img {
+    margin-right: 10px;
+}
+main .why-greenlegend{
+    background-color: #fff;
+    padding: 170px 0 0;
+    transition: all 0.5s;
+}
+/* why green legend*/
+
+main .why-greenlegend .content-box-wrap{
+    margin-left: auto;
+    margin-right: auto;
+}
+main .why-greenlegend .content-box{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+main .why-greenlegend .content-box .left{
+    padding: 0 15px;
+    margin-left: 8%;
+    width: 100%;
+    position: relative;
+}
+main .why-greenlegend .content-box .left h2{
+    color: #38aa34;
+    line-height: 65px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+main .why-greenlegend .content-box .left h2 span,
+main .why-greenlegend .content-box .left h4 span{
+    font-family: "Prompt";
+}
+main .why-greenlegend .content-box .left h4{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 55px;
+}
+main .why-greenlegend .content-box .left .textbox{
+    margin-top: 24px;
+}
+main .why-greenlegend .content-box .left p{
+    margin-bottom: 16px;
+    line-height: 23px;
+    font-size: 18px;
+}
+main .why-greenlegend .content-box .left .textbox p:nth-child(3) {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 32px;
+}
+main .why-greenlegend .content-box .left .textbox p:nth-child(3) span{
+    font-family: "Prompt";
+
+}
+main .why-greenlegend .content-box .right{
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 8.333333%;
+    overflow: hidden;
+}
+main .why-greenlegend .content-box .right img{
+    max-width: 100%;
+    height: auto;
+}
+/* video bg */
+main .video-wrap{
+    overflow: hidden;
+    position: relative;
+    height: 650px;
+    max-height: 650px;
+    transition: all 0.2s;
+}
+main .video-wrap .video-img-container{
+    width: 100%;
+    max-height: 1080px;
+    position: absolute;
+    height: 100%;
+}
+main .video-wrap .video-img-container .bg-image{
+    background: url(../images/green-legend-video-bgimage.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 100%;
+    max-height: 1080px;
+
+}
+main .video-wrap .video-container{
+    height: 100%;
+}
+main .video-wrap .video-container .overlay{
+    position: absolute;
+    z-index: 2;
+}
+main .video-wrap .video-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .video-wrap .video-box .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+main .video-wrap .video-box .text h2{
+    font-size: 60px;
+    color: #fff;
+    font-family: "Prompt";
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+main .video-wrap .video-box .text .text-1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+main .video-wrap .video-box .text .video-button-img{
+    margin-top: 15px;
+    text-align: center;
+    transition: all 0.8s ease-in-out;
+}
+main .video-wrap .video-box .text .video-button-img:hover{
+    transform: scale(1.2);
+}
+main .video-wrap .video-box .text img{  
+    width: 50%;
+    cursor: pointer;
+    z-index: 110;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+}
+main .video-wrap .video-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: none;
+    display: none;
+}
+main .video-wrap .video-modal .modal-box{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    margin: 40px auto;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    -webkit-transition: transform .3s ease-out;
+    transform: translate(0,-50px);
+}
+main .video-wrap .video-modal .modal-box .modal-content{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: 0;
+    border-radius: .3rem; 
+}
+main .video-wrap .video-modal .modal-body{
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+main .backdrop{
+    background: #000;
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    display: none;
+    overflow: hidden;
+}
+body.modal-open{
+    padding-right: 17px;
+    overflow: hidden;
+}
+
+/* product */
+.section-product{
+    background-color: #fff;
+    padding: 110px 0 50px;
+}
+.section-product .container{
+    max-width: 1440px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-product .text-container{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.section-product .text-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.section-product .text-box .caption,
+.section-product .text-box h2{
+    color: #38aa34;
+    text-align: center;
+    font-weight: 500;
+}
+.section-product .text-box h2 span{
+    font-family: "Prompt";
+}
+.section-product .text-box .caption{
+    font-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+.section-product .text-box h2{
+    font-size: calc(30px + (48 - 30) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    margin-bottom: 16px;
+}
+.section-product .arrow span{
+    display: block;
+    background: url(../images/chevron-down-solid.svg) no-repeat 50% 50% / contain;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+/* categories */
+
+main .product-categories .categories-wrap .categories-box{
+    display: flex;
+}
+main .product-categories .categories-wrap .categories-box .categries{
+    width: 33.3333%;
+}
+main .product-categories .categories-wrap .categories-box .fresh:hover .caption-1,
+main .product-categories .categories-wrap .categories-box .fresh:hover h4,
+main .product-categories .categories-wrap .categories-box .sausage:hover .caption-1,
+main .product-categories .categories-wrap .categories-box .sausage:hover h4,
+main .product-categories .categories-wrap .categories-box .frozen:hover .caption-1,
+main .product-categories .categories-wrap .categories-box .frozen:hover h4{
+    text-decoration: underline;
+}
+main .product-categories .categories-wrap .fresh .slide1{
+    background-color: #db9400 !important;
+    color: #fff;
+}
+main .product-categories .categories-wrap .fresh .slide2{
+    background-color: #005e8d !important;
+    color: #fff;
+}
+main .product-categories .categories-wrap .fresh .slide3{
+    background-color: #b04090 !important;
+    color: #fff;
+}
+main .product-categories .categories-wrap .sausage .slide1{
+    background-color: #00a254 !important;
+    color: #fff;
+}
+main .product-categories .categories-wrap .sausage .slide2{
+    background-color: #7da519 !important;
+    color: #fff;
+}
+main .product-categories .categories-wrap .sausage .slide3{
+    background-color: #c9070a !important;
+    color: #fff;
+}
+main .product-categories .categories-wrap .frozen .slide1{
+    background-color: #0085c9 !important;
+    color: #fff;
+}
+main .product-categories .categories-wrap .frozen .slide2{
+    background-color: #00a199 !important;
+    color: #fff;
+}
+
+main .product-categories .categories-wrap .swiper-container .swiper-wrapper img{
+    width: 100%;
+    opacity: 1;
+}
+main .product-categories .categories-wrap .swiper-container .swiper-wrapper .text{
+    text-align: center;
+
+}
+main .product-categories .categories-wrap .swiper-container .swiper-wrapper .caption-1{
+    font-size: 25px;
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    text-transform: capitalize;
+    margin-top: 16px;
+    font-family: "Prompt";
+}
+main .product-categories .categories-wrap .swiper-container .swiper-wrapper h4{
+    font-size: 35px;
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    margin-top: 8px;
+}
+main .product-categories .categories-wrap .swiper-container .swiper-slide{
+    padding-bottom: 50px;
+}
+
+/* categories-text-content */
+.categories-text-content {
+    padding: 50px 0;
+}
+.categories-text-content .container{
+    max-width: 1440px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.categories-text-content .container .text-box{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.categories-text-content .container .text{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.categories-text-content .container .text p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.categories-text-content .container .text p span{
+    font-weight: 600;
+    font-family: "Prompt";
+    text-transform: capitalize;
+}
+
+/* recipe video */
+.recipe-video{
+    overflow: hidden;
+    position: relative;
+    height: 650px;
+    max-height: 650px;
+    transition: all 0.2s;
+}
+.recipe-video .bg-image{
+    background: url(../images/rezeptvideo-header-vers-2.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 100%;
+    max-height: 1080px;
+}
+
+.recipe-video .video-img-container{
+    width: 100%;
+    max-height: 1080px;
+    position: absolute;
+    height: 100%;
+}
+.recipe-video .video-container{
+    height: 100%;
+}
+
+.recipe-video .video-container .video-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recipe-video .video-container .video-box .overlay{
+    position: absolute;
+    z-index: 2;
+}
+.recipe-video .video-container .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+.recipe-video .video-container .text h2{
+    font-size: 50px;
+    color: #fff;
+    font-family: "Prompt";
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.recipe-video .video-container .text h2 span{
+    font-family: "Prompt";
+    font-weight: 600;
+}
+.recipe-video .video-container .text .text-1{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.recipe-video .video-container .text .text-1 span{
+    font-family: "Prompt";
+}
+.recipe-video .video-container .text .video-button-img{
+    margin-top: 15px;
+    text-align: center;
+}
+.recipe-video .video-container .text .video-button-img img{
+    width: 50%;
+    cursor: pointer;
+    z-index: 110;
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+    visibility: visible;
+}
+.recipe-video .video-container .text .video-button-img img:hover{
+    transform: scale(1.2);
+}
+.recipe-video .video-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: none;
+    display: none;
+}
+.recipe-video .video-modal .modal-box{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    margin: 40px auto;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    -webkit-transition: transform .3s ease-out;
+    transform: translate(0,-50px);
+}
+.recipe-video .video-modal .modal-box .modal-content{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: 0;
+    border-radius: .3rem;
+}
+.recipe-video  .video-modal .modal-body{
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+/*media query*/
+@media all and (max-width: 1440px) {
+    .main-banner .swiper-slide img{
+        width: 100%;
+    }
+    main .why-greenlegend .content-box .left h2{
+        line-height: 48px;
+    }
+    main .why-greenlegen .right img{
+        width: 100%;
+    }
+    .video-container .video-box .overlay,
+    .recipe-video .video-container .video-box .overlay{
+        width: 100%;
+    }
+    .recipe-video .video-container .text h2{
+        font-size: 45px;
+    }
+
+}
+
+@media all and (max-width: 1300px) {
+    main .why-greenlegend .content-box .left h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    main .why-greenlegend .content-box .left p{
+        font-size: 16px;
+    }
+    main .why-greenlegend .content-box .left .textbox p:nth-child(3){
+        font-size: 22px;
+    }
+    main .video-wrap .video-box .text h2{
+        font-size: 55px;
+    }
+    main .video-wrap .video-box .text .text-1{
+        font-size: 35px;
+    }
+    main .product-categories .categories-wrap .swiper-container .swiper-wrapper h4{
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 1100px) {
+    main .why-greenlegend .content-box .left h2{
+        font-size: 30px;
+        padding-top: 0;
+    }
+    main .why-greenlegend .content-box .left p{
+        margin-bottom: 40px;
+    }
+    main .product-categories .categories-wrap .swiper-container .swiper-wrapper .caption-1{
+        font-size: 20px;
+    }
+    main .product-categories .categories-wrap .swiper-container .swiper-wrapper h4 {
+        font-size: 25px;
+    }
+    main .video-wrap .video-box .text h2 {
+        font-size: 45px;
+        line-height: 36px;
+    }
+    main .video-wrap .video-box .text .text-1 {
+        font-size: 30px;
+        line-height: 22px;
+    }
+    .categories-text-content .container .text p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .recipe-video .video-container .text h2 {
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .recipe-video .video-container .text .text-1 {
+        font-size: 28px;
+        line-height: 21px;
+    }
+}
+@media all and (max-width: 991px){
+    main .why-greenlegend .content-box{        
+        flex-wrap: wrap;
+    }
+    main .why-greenlegend .content-box .left,
+    main .why-greenlegend .content-box .right{
+        margin-left: 0;
+    }
+    main .why-greenlegend .content-box .right{
+        justify-content: unset;
+        margin-top: 3rem;
+    }
+    main .why-greenlegend .content-box .right img{
+        width: 100%;
+    }
+    main .video-wrap,
+    .recipe-video{
+        height: 550px;
+    }
+    main .video-wrap .video-img-container .bg-image{
+        background: url(../images/video-green-legend-mobil.jpg) no-repeat center / cover;
+    }
+    main .video-wrap .video-box .text img,
+    .recipe-video .video-container .text .video-button-img img{
+        width: 85%;
+    }
+    main .product-categories .categories-wrap .categories-box{
+        flex-wrap: wrap;
+    }
+    main .product-categories .categories-wrap .categories-box .categries{
+        width: 100%;
+    }
+    .recipe-video .bg-image{
+        background: url(../images/mobil-rezeptvideo-1.jpg) no-repeat center / cover;
+    }
+    .recipe-video .video-container .text h2{
+        width: 56%;
+        margin: 25px auto;
+        line-height: 50px;
+        text-align: center;
+    }
+    main .product-categories .categories-wrap .swiper-container .swiper-wrapper img{
+        width: unset;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .video-container .video-box .overlay, .recipe-video .video-container .video-box .overlay{
+        width: unset;
+    }
+}
+@media all and (max-width: 768px) {
+    main .main-banner .swiper-container .mobile{
+        display: block;
+    }
+    main .main-banner .swiper-container .slide1,
+    main .main-banner .swiper-container .slide2{
+        display: none;
+    }
+    .main-banner .swiper-slide img{
+        width: unset;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    main .main-banner .instagram,
+    main .main-banner .facebook{
+        display: none;
+    }
+    main .why-greenlegend{
+        padding: 50px 0 0 ;
+    }
+    main .why-greenlegend .content-box .left p {
+        margin-bottom: 20px;
+    }
+    main .why-greenlegend .content-box .left .textbox p:nth-child(3) {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .categories-text-content .container .text p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .recipe-video .video-container .text h2{
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .recipe-video .video-container .text h2 {
+        width: 89%;
+    }
+}
+@media all and (max-width: 576px){
+    main .video-wrap, .recipe-video {
+        height: 400px;
+    }
+    main .why-greenlegend .content-box .left h2{
+        font-size: 29px;
+    }
+    main .why-greenlegend .content-box .left p {
+        font-size: 15px;
+    }
+    main .why-greenlegend .content-box .left .textbox p:nth-child(3) {
+        font-size: 18px;
+    }
+    main .video-wrap .video-box .text img, .recipe-video .video-container .text .video-button-img img {
+        width: 50%;
+    }
+    .recipe-video .video-container .text h2 {
+        width: 94%;
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 425px){
+    main .why-greenlegend .content-box .left h2 {
+        width: 89%;
+    }
+    main .why-greenlegend .content-box .left p {
+        font-size: 14px;
+    }
+    main .video-wrap .video-box .text h2{
+        font-size: 35px;
+        margin-bottom: 16px;
+    }
+    main .video-wrap .video-box .text .text-1 {
+        font-size: 28px;
+        line-height: 14px;
+    }
+    .categories-text-content .container .text p{
+        font-size: 14px;
+    }
+    .recipe-video .video-container .text h2{
+        font-size: 25px;
+        margin: 16px auto;
+        line-height: 34px;
+    }
+    .recipe-video .video-container .text .text-1 {
+        font-size: 23px;
+        line-height: 17px;
+    }
+}
+
+@media all and (max-width: 375px){
+    main .why-greenlegend .content-box .left h2 {
+        width: 93%;
+    }
+    main .product-categories .categories-wrap .swiper-container .swiper-wrapper h4 {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    main .product-categories .categories-wrap .swiper-container .swiper-wrapper .caption-1 {
+        font-size: 18px;
+    }
+    main .video-wrap .video-box .text h2 {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    main .video-wrap .video-box .text .text-1{
+        font-size: 24px;
+    }
+    .recipe-video .video-container .text h2{
+        font-size: 23px;
+
+    }
+}
+@media all and (max-width: 320px){
+    main .why-greenlegend .content-box .left h2 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    main .why-greenlegend .content-box .left p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    main .why-greenlegend .content-box .left .textbox p:nth-child(3) {
+        font-size: 16px;
+    }
+    .recipe-video .video-container .text h2 {
+        font-size: 21px;
+        line-height: 27px;
+    }
+    .recipe-video .video-container .text .text-1 {
+        font-size: 20px;
+        line-height: 17px;
+    }
+}
+
+
